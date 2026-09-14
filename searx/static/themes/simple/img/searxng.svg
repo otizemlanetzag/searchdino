@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1297 1213" role="img" aria-label="Sandstorm Search logo"><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAB" width="1297" height="1213"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Sandstorm Search logo">
+<defs>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7d58a"/><stop offset=".45" stop-color="#c58a3a"/><stop offset="1" stop-color="#7a461f"/></linearGradient>
+<linearGradient id="sand" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7d9a0"/><stop offset=".55" stop-color="#d99a4a"/><stop offset="1" stop-color="#8b5425"/></linearGradient>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-opacity=".25"/></filter>
+</defs>
+<g filter="url(#shadow)" transform="rotate(-8 260 245)">
+<circle cx="292" cy="218" r="151" fill="#fffdf7" fill-opacity=".92" stroke="url(#gold)" stroke-width="12"/>
+<path d="M185 285 Q240 305 305 300 Q375 294 414 247 Q435 222 426 194 Q415 160 378 157 Q345 155 326 181 Q311 201 318 225 Q325 250 351 254 Q374 258 389 239" fill="none" stroke="url(#sand)" stroke-width="24" stroke-linecap="round"/>
+<path d="M185 242 C220 218 255 184 286 169 C313 156 342 163 360 184" fill="none" stroke="#563525" stroke-width="25" stroke-linecap="round" opacity=".9"/>
+<path d="M184 244 C225 220 257 193 289 177 C310 166 329 169 345 181" fill="none" stroke="url(#sand)" stroke-width="25" stroke-linecap="round"/>
+<path d="M166 308 Q245 270 330 293 Q390 310 431 275 L435 335 Q340 375 253 347 Q205 332 166 308Z" fill="url(#sand)" opacity=".9"/>
+<path d="M149 322 L42 449" stroke="url(#gold)" stroke-width="45" stroke-linecap="round"/>
+</g></svg>
