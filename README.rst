@@ -1,3 +1,4 @@
+
 .. SPDX-License-Identifier: AGPL-3.0-or-later
 
 .. _metasearch engine: https://en.wikipedia.org/wiki/Metasearch_engine
@@ -6,13 +7,10 @@
 .. _CONTRIBUTING: https://github.com/searxng/searxng/blob/master/CONTRIBUTING.rst
 .. _LICENSE: https://github.com/searxng/searxng/blob/master/LICENSE
 
-.. figure:: https://raw.githubusercontent.com/searxng/searxng/master/client/simple/src/brand/searxng.svg
-   :target: https://searxng.org
-   :alt: SearXNG
-   :width: 512px
 
 
-SearXNG is a `metasearch engine`_. Users are neither tracked nor profiled.
+
+Sandstorm search is a `metasearch engine`_, based on Searxng. Users are neither tracked nor profiled.
 
 .. image:: https://img.shields.io/badge/organization-3050ff?style=flat-square&logo=searxng&logoColor=fff&cacheSeconds=86400
    :target: https://github.com/searxng
