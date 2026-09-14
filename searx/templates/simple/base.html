@@ -3,13 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="endpoint" content="{{ endpoint }}">
-  <meta name="description" content="SearXNG — a privacy-respecting, open metasearch engine">
-  <meta name="keywords" content="SearXNG, search, search engine, metasearch, meta search">
-  <meta name="generator" content="searxng/{{ searxng_version }}">
+  <meta name="description" content="Sandstorm Search — a privacy-respecting, open metasearch engine">
+  <meta name="keywords" content="Sandstorm Search, search, search engine, metasearch, meta search">
+  <meta name="generator" content="Sandstorm Search">
   <meta name="referrer" content="no-referrer">
   <meta name="robots" content="noarchive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{% endblock %}{{ instance_name }}</title>
+  <style>
+    :root {
+      --sandstorm-bg: #F5F2EB;
+      --sandstorm-text: #3E2723;
+      --sandstorm-card: #EFEAE0;
+      --sandstorm-border: #C2A67D;
+      --sandstorm-hover: #D2B48C;
+      --sandstorm-accent: #8B6F47;
+    }
+    html, body { background: var(--sandstorm-bg) !important; color: var(--sandstorm-text) !important; }
+    body, main, footer, #links_on_top { color: var(--sandstorm-text); }
+    #links_on_top a, footer a { color: var(--sandstorm-text) !important; }
+    #links_on_top a:hover, footer a:hover { color: var(--sandstorm-accent) !important; }
+    input, textarea, select, button, .search_box, .result, .dialog, .preferences { 
+      background-color: var(--sandstorm-card) !important;
+      color: var(--sandstorm-text) !important;
+      border-color: var(--sandstorm-border) !important;
+    }
+    button:hover, input[type="submit"]:hover { background-color: var(--sandstorm-hover) !important; }
+    .title h1 { color: var(--sandstorm-text) !important; }
+    .dialog-error { border-color: #b3261e !important; }
+  </style>
   <script type="module" src="{{ url_for('static', filename='sxng-core.min.js') }}" client_settings="{{ client_settings }}"></script>
   {% block meta %}{% endblock %}
   {% if rtl %}
@@ -66,7 +88,7 @@
   </main>
   <footer>
     <p>
-    {{ _('Powered by') }} <a href="{{ url_for('info', pagename='about') }}">SearXNG</a> - {{ searxng_version }} — {{ _('a privacy-respecting, open metasearch engine') }}<br>
+    {{ _('Powered by') }} <a href="{{ url_for('info', pagename='about') }}">Sandstorm Search</a> — {{ _('a privacy-respecting, open metasearch engine') }}<br>
         <a href="{{ searxng_git_url }}">{{ _('Source code') }}</a>
         | <a href="{{ get_setting('brand.issue_url') }}">{{ _('Issue tracker') }}</a>
         {% if enable_metrics %}| <a href="{{ url_for('stats') }}">{{ _('Engine stats') }}</a>{% endif %}
