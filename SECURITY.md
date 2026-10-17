@@ -2,7 +2,8 @@
 
 We love responsible reports of (potential) security issues in SearXNG.
 
-You can contact us at security@searxng.org.
+You can contact us at security@searxng.org for SEARXNG
+You can contact us at security@searxng.org for searchdino
 
 Be sure to provide as much information as possible and if found
 also reproduction steps of the identified vulnerability. Also
