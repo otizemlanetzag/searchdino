@@ -10,7 +10,7 @@
 
 
 
-Sandstorm search is a `metasearch engine`_, based on Searxng. Users are neither tracked nor profiled.
+searchdino search is a `metasearch engine`_, based on Searxng. Users are neither tracked nor profiled.
 
 .. image:: https://img.shields.io/badge/organization-3050ff?style=flat-square&logo=searxng&logoColor=fff&cacheSeconds=86400
    :target: https://github.com/searxng
