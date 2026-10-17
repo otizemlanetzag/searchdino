@@ -88,6 +88,7 @@ def request(query: str, params: "OnlineParams") -> None:
         params["url"] = f"{base_url}/search/secure/?{urlencode(args)}"
     else:
         params["url"] = f"{base_url}/{privacywall_category}/?{urlencode(args)}"
+    params["headers"]["Referer"] = f"{base_url}/"
 
 
 def _general_results(doc: "ElementBase") -> EngineResults:
@@ -146,8 +147,7 @@ def _video_results(doc: "ElementBase") -> EngineResults:
             thumbnail = _extract_thumbnail_url(extr(thumbnail_style, ":url(", ")"))
 
         res.add(
-            res.types.LegacyResult(
-                template="videos.html",
+            res.types.Video(
                 url=url,
                 title=extract_text(eval_xpath(result, ".//h2[contains(@class, 'video-card-title')]")) or "",
                 content=extract_text(eval_xpath(result, ".//p")) or "",
